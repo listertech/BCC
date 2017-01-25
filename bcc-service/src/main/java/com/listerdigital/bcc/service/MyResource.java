@@ -80,18 +80,6 @@ public class MyResource {
 		
     }
     
-    @GET
-    @Path("getCampaignsDetails")
-    @Produces(MediaType.TEXT_PLAIN)
-    //public String getCampaignDetails(@QueryParam("host") String host, @QueryParam("user") String user, @QueryParam("password") String password, @QueryParam("port") String port, @QueryParam("dir") String dir,@QueryParam("file") String file) {
-    	public String getCampaignDetails() {	
-    	String str_host="52.9.146.109";
-    	String str_user="gfproduser";
-    	int str_port=22;
-    	String str_dir="/home/gfproduser/Bcc";
-    	String str_file="campaign.csv";
-
-    	return new S3Sample().getCampaignDetails(str_host,str_user,str_port,str_dir,str_file);
-    }
+   
     
 }
