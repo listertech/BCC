@@ -28,21 +28,7 @@ public class MyResource {
      *
      * @return String that will be returned as a text/plain response.
      */
-    @GET
-    @Path("getCampaigns")
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getIt(@QueryParam("email") String email) {
-    	System.out.println("Inside get -- "+email);
-    	return new S3Sample().getfileNames(email).toString();
-    }
-    
-    @GET
-    @Path("getAllCampaigns")
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getAll() {
-    	System.out.println("Inside get All-- ");
-    	return new S3Sample().getfileNames().toString();
-    }
+  
     
     @GET
     @Path("getCampaignHtml")
